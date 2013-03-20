@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
 
   s.source_files = 'Classes/**/*.{h,m}'
-  s.resources = 'Resources/*.txt'
+  s.resources = 'Resources/*'
 
   s.requires_arc = true
 
