@@ -10,6 +10,10 @@
   int curPage;
 }
 
+@synthesize completionBlock;
+@synthesize portrait;
+@synthesize landscape;
+
 #define degreesToRadians(x) (M_PI * (x) / 180.0)
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -4,6 +4,11 @@
   NSMutableArray *_curViews;
 }
 
+@synthesize scrollView;
+@synthesize pageControl;
+@synthesize datasource = _datasource;
+@synthesize delegate;
+
 - (id)initWithFrame:(CGRect)frame
 {
   self = [super initWithFrame:frame];
