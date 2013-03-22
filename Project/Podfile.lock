@@ -1,11 +1,25 @@
 
 SPEC CHECKSUMS: 
-  JSONKit: 3d4708953ea7ae399a49777372d8b060a43ddd27
+  jre_emul: 2aee63ba3f73f905d9d1792b15448aab7beb657a
+  gtm-oauth2/nibs: f75ae8b495a5de93c411dac616bbccac03b484c7
+  gtm-oauth2: f75ae8b495a5de93c411dac616bbccac03b484c7
+  SBJson: 4971016670e7b3fa04a36d4e72ab0fb1ad3a9f69
+
+DEPENDENCIES: 
+- SBJson (~> 3.2)
+- gtm-oauth2 (~> 0.0.1)
+- jre_emul (from `https://github.com/goodow/j2objc.git')
+- jre_emul (~> 0.6.1)
 
 COCOAPODS: 0.16.4
 
-DEPENDENCIES: 
-- JSONKit (~> 1.4)
+EXTERNAL SOURCES: 
+  jre_emul: 
+    :git: https://github.com/goodow/j2objc.git
 
 PODS: 
-- JSONKit (1.5pre)
+- SBJson (3.2)
+- gtm-oauth2 (0.0.1): 
+  - gtm-oauth2/nibs (= 0.0.1)
+- gtm-oauth2/nibs (0.0.1)
+- jre_emul (0.6.1)
