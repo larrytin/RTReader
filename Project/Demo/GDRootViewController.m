@@ -12,6 +12,7 @@
 #import "JreEmulation.h"
 #import "java/util/regex/Pattern.h"
 #import "java/util/regex/Matcher.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 static NSString *const keychainItemNameGoogle = @"OAuth2: Google";
 static NSString *const keychainItemNameQQ = @"OAuth2: QQ";
@@ -126,7 +127,14 @@ NSString * scopeQQ = @"get_user_info,get_info,get_simple_userinfo";
                                                          [self displayAlertWithMessage:@"登录失败"];
                                                        } else {
                                                          // Authentication succeeded
-                                                         [self fetchUserInfoFromGoogle:auth];
+                                                         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+                                                         dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+                                                           NSString *name = [self fetchUserInfoFromGoogle:auth];
+                                                           dispatch_async(dispatch_get_main_queue(), ^{
+                                                             [MBProgressHUD hideHUDForView:self.view animated:YES];
+                                                             self.userName.text = name;
+                                                           });
+                                                         });
                                                        }
                                                      }
                     ];
@@ -141,9 +149,10 @@ NSString * scopeQQ = @"get_user_info,get_info,get_simple_userinfo";
 
 
 
--(void)fetchUserInfoFromGoogle:(GTMOAuth2Authentication *) auth {
+-(NSString *)fetchUserInfoFromGoogle:(GTMOAuth2Authentication *) auth {
   NSURL *url = [NSURL URLWithString:@"https://www.googleapis.com/oauth2/v1/userinfo"];
   NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
+  NSString * __block toRtn;
   [auth authorizeRequest:request completionHandler:^(NSError *error) {
     if (error == nil) {
       GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher fetcherWithRequest:request];
@@ -157,17 +166,19 @@ NSString * scopeQQ = @"get_user_info,get_info,get_simple_userinfo";
         } else {
           NSDictionary * json = [[[SBJsonParser alloc] init ]objectWithData:data];
           // fetch succeeded
-          self.userName.text = [json objectForKey:@"email"];
+          toRtn = [json objectForKey:@"email"];
         }
       }];
     }
   }
    ];
+  return toRtn;
 }
 
--(void)fetchUserInfoFromQQ:(GTMOAuth2Authentication *) auth {
+-(NSString *)fetchUserInfoFromQQ:(GTMOAuth2Authentication *) auth {
   NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.qq.com/oauth2.0/me?access_token=%@", auth.accessToken]];
   NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
+  NSString * __block toRtn;
   [auth authorizeRequest:request completionHandler:^(NSError *error) {
     if (error == nil) {
       GTMHTTPFetcher* myFetcher = [GTMHTTPFetcher fetcherWithRequest:request];
@@ -194,7 +205,7 @@ NSString * scopeQQ = @"get_user_info,get_info,get_simple_userinfo";
             [myFetcher beginFetchWithCompletionHandler:^(NSData *data, NSError *error) {
               NSDictionary * json = [[[SBJsonParser alloc] init ]objectWithData:data];
               NSString * name = [self getNameFromQQ:json];
-              self.userName.text = name;
+              toRtn = name;
             }];
           }
         }
@@ -202,6 +213,7 @@ NSString * scopeQQ = @"get_user_info,get_info,get_simple_userinfo";
     }
   }
    ];
+  return toRtn;
 }
 
 -(NSString *)getNameFromQQ:(NSDictionary *)dict {
@@ -257,7 +269,14 @@ NSString * scopeQQ = @"get_user_info,get_info,get_simple_userinfo";
                                                                   [self displayAlertWithMessage:@"登录失败"];
                                                                 } else {
                                                                   // Sign-in succeeded
-                                                                  [self fetchUserInfoFromQQ:auth];
+                                                                  [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+                                                                  dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+                                                                    NSString *name = [self fetchUserInfoFromQQ:auth];
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                      [MBProgressHUD hideHUDForView:self.view animated:YES];
+                                                                      self.userName.text = name;
+                                                                    });
+                                                                  });
                                                                 }
                                                               }
                     ];

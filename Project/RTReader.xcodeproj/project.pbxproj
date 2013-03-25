@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D82F0D616FABA09000975A1 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D82F0D316FABA09000975A1 /* HelpViewController.m */; };
-		8D82F0D716FABA09000975A1 /* PagedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D82F0D516FABA09000975A1 /* PagedScrollView.m */; };
 		8D8645AB16F99DD900ADC5A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8645AA16F99DD900ADC5A2 /* UIKit.framework */; };
 		8D8645AC16F99DD900ADC5A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB1520216F88895007B265E /* Foundation.framework */; };
 		8D8645AE16F99DD900ADC5A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8645AD16F99DD900ADC5A2 /* CoreGraphics.framework */; };
@@ -21,16 +19,16 @@
 		8D8645C316F99DD900ADC5A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8645C116F99DD900ADC5A2 /* MainStoryboard.storyboard */; };
 		8D8645C616F99DD900ADC5A2 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8645C516F99DD900ADC5A2 /* GDViewController.m */; };
 		8D8645CE16F9A6D800ADC5A2 /* GDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */; };
+		8DF2B09F17002E1B009B6603 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09817002E1B009B6603 /* HelpViewController.m */; };
+		8DF2B0A017002E1B009B6603 /* OAuthLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09917002E1B009B6603 /* OAuthLogin.m */; };
+		8DF2B0A117002E1B009B6603 /* PagedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09B17002E1B009B6603 /* PagedScrollView.m */; };
+		8DF2B0A217002E1B009B6603 /* RTReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09E17002E1B009B6603 /* RTReader.m */; };
 		BB5561852BC84DBF8CBC7220 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F2F77B4BCF42B2B1C2C325 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52A2852C14284347816FBA59 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		58F2F77B4BCF42B2B1C2C325 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D82F0D216FABA09000975A1 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
-		8D82F0D316FABA09000975A1 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
-		8D82F0D416FABA09000975A1 /* PagedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedScrollView.h; sourceTree = "<group>"; };
-		8D82F0D516FABA09000975A1 /* PagedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedScrollView.m; sourceTree = "<group>"; };
 		8D8645A916F99DD900ADC5A2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8645AA16F99DD900ADC5A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D8645AD16F99DD900ADC5A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,9 +47,15 @@
 		8D8645CC16F9A6D800ADC5A2 /* GDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRootViewController.h; sourceTree = "<group>"; };
 		8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRootViewController.m; sourceTree = "<group>"; };
 		8DB1520216F88895007B265E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8DB1521B16F88C84007B265E /* RTReader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTReader-Prefix.pch"; sourceTree = "<group>"; };
-		8DB1521C16F88C84007B265E /* RTReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTReader.h; sourceTree = "<group>"; };
-		8DB1521D16F88C84007B265E /* RTReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTReader.m; sourceTree = "<group>"; };
+		8DF2B09717002E1B009B6603 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		8DF2B09817002E1B009B6603 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		8DF2B09917002E1B009B6603 /* OAuthLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthLogin.m; sourceTree = "<group>"; };
+		8DF2B09A17002E1B009B6603 /* PagedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedScrollView.h; sourceTree = "<group>"; };
+		8DF2B09B17002E1B009B6603 /* PagedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagedScrollView.m; sourceTree = "<group>"; };
+		8DF2B09C17002E1B009B6603 /* RTReader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTReader-Prefix.pch"; sourceTree = "<group>"; };
+		8DF2B09D17002E1B009B6603 /* RTReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTReader.h; sourceTree = "<group>"; };
+		8DF2B09E17002E1B009B6603 /* RTReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTReader.m; sourceTree = "<group>"; };
+		8DF2B0A317002E35009B6603 /* OAuthLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthLogin.h; sourceTree = "<group>"; };
 		CD42F3B548C24878A49CA3E1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		FE7DA7C2C0EB4F1CB6E6AAD3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,11 +78,11 @@
 		8D8645AF16F99DD900ADC5A2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */,
 				8D8645B816F99DD900ADC5A2 /* GDAppDelegate.h */,
 				8D8645B916F99DD900ADC5A2 /* GDAppDelegate.m */,
 				8D8645C116F99DD900ADC5A2 /* MainStoryboard.storyboard */,
 				8D8645CC16F9A6D800ADC5A2 /* GDRootViewController.h */,
-				8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */,
 				8D8645C416F99DD900ADC5A2 /* GDViewController.h */,
 				8D8645C516F99DD900ADC5A2 /* GDViewController.m */,
 				8D8645B016F99DD900ADC5A2 /* Supporting Files */,
@@ -103,7 +107,7 @@
 		8DB151F616F88895007B265E = {
 			isa = PBXGroup;
 			children = (
-				8DB1521A16F88C84007B265E /* Classes */,
+				8DF2B09517002E1B009B6603 /* Classes */,
 				8D8645AF16F99DD900ADC5A2 /* Demo */,
 				8DB1520116F88895007B265E /* Frameworks */,
 				8DB1520016F88895007B265E /* Products */,
@@ -132,27 +136,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8DB1521A16F88C84007B265E /* Classes */ = {
+		8DF2B09517002E1B009B6603 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8D82F0D216FABA09000975A1 /* HelpViewController.h */,
-				8D82F0D316FABA09000975A1 /* HelpViewController.m */,
-				8D82F0D416FABA09000975A1 /* PagedScrollView.h */,
-				8D82F0D516FABA09000975A1 /* PagedScrollView.m */,
-				8DB1522316F88CFD007B265E /* Supporting Files */,
-				8DB1521C16F88C84007B265E /* RTReader.h */,
-				8DB1521D16F88C84007B265E /* RTReader.m */,
+				8DF2B09617002E1B009B6603 /* ios */,
 			);
 			name = Classes;
-			path = ../Classes/ios;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
-		8DB1522316F88CFD007B265E /* Supporting Files */ = {
+		8DF2B09617002E1B009B6603 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				8DB1521B16F88C84007B265E /* RTReader-Prefix.pch */,
+				8DF2B09717002E1B009B6603 /* HelpViewController.h */,
+				8DF2B09817002E1B009B6603 /* HelpViewController.m */,
+				8DF2B09917002E1B009B6603 /* OAuthLogin.m */,
+				8DF2B0A317002E35009B6603 /* OAuthLogin.h */,
+				8DF2B09A17002E1B009B6603 /* PagedScrollView.h */,
+				8DF2B09B17002E1B009B6603 /* PagedScrollView.m */,
+				8DF2B09C17002E1B009B6603 /* RTReader-Prefix.pch */,
+				8DF2B09D17002E1B009B6603 /* RTReader.h */,
+				8DF2B09E17002E1B009B6603 /* RTReader.m */,
 			);
-			name = "Supporting Files";
+			path = ios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +249,10 @@
 				8D8645BA16F99DD900ADC5A2 /* GDAppDelegate.m in Sources */,
 				8D8645C616F99DD900ADC5A2 /* GDViewController.m in Sources */,
 				8D8645CE16F9A6D800ADC5A2 /* GDRootViewController.m in Sources */,
-				8D82F0D616FABA09000975A1 /* HelpViewController.m in Sources */,
-				8D82F0D716FABA09000975A1 /* PagedScrollView.m in Sources */,
+				8DF2B09F17002E1B009B6603 /* HelpViewController.m in Sources */,
+				8DF2B0A017002E1B009B6603 /* OAuthLogin.m in Sources */,
+				8DF2B0A117002E1B009B6603 /* PagedScrollView.m in Sources */,
+				8DF2B0A217002E1B009B6603 /* RTReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
