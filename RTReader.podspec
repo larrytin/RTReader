@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
   s.dependency 'SBJson', '~> 3.2'
   s.dependency 'MBProgressHUD', '~> 0.6'
   s.dependency 'SVPullToRefresh', '~> 0.4.1'
+  s.dependency 'MWPhotoBrowser', '~> 1.0.1'
+
 end
