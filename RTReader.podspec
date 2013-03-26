@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.dependency 'gtm-oauth2/Core/Touch', '~> 0.0.1'
   s.dependency 'SBJson', '~> 3.2'
   s.dependency 'MBProgressHUD', '~> 0.6'
+  s.dependency 'SVPullToRefresh', '~> 0.4.1'
 end
