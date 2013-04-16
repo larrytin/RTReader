@@ -18,7 +18,10 @@
 		8D8645C016F99DD900ADC5A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8645BF16F99DD900ADC5A2 /* Default-568h@2x.png */; };
 		8D8645C316F99DD900ADC5A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8645C116F99DD900ADC5A2 /* MainStoryboard.storyboard */; };
 		8D8645C616F99DD900ADC5A2 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8645C516F99DD900ADC5A2 /* GDViewController.m */; };
-		8D8645CE16F9A6D800ADC5A2 /* GDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */; };
+		8DE3DF9A171D1F950069EC20 /* GDHttpServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3DF99171D1F950069EC20 /* GDHttpServerViewController.m */; };
+		8DE3DF9D171D23270069EC20 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3DF9C171D23270069EC20 /* test.txt */; };
+		8DE3DFA4171D25E40069EC20 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3DFA3171D25E40069EC20 /* web */; };
+		8DE3DFA7171D27070069EC20 /* FileUploadHttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3DFA6171D27070069EC20 /* FileUploadHttpConnection.m */; };
 		8DF2B09F17002E1B009B6603 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09817002E1B009B6603 /* HelpViewController.m */; };
 		8DF2B0A017002E1B009B6603 /* OAuthLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09917002E1B009B6603 /* OAuthLogin.m */; };
 		8DF2B0A117002E1B009B6603 /* PagedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2B09B17002E1B009B6603 /* PagedScrollView.m */; };
@@ -44,9 +47,13 @@
 		8D8645C216F99DD900ADC5A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8D8645C416F99DD900ADC5A2 /* GDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
 		8D8645C516F99DD900ADC5A2 /* GDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
-		8D8645CC16F9A6D800ADC5A2 /* GDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRootViewController.h; sourceTree = "<group>"; };
-		8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRootViewController.m; sourceTree = "<group>"; };
 		8DB1520216F88895007B265E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DE3DF98171D1F950069EC20 /* GDHttpServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHttpServerViewController.h; sourceTree = "<group>"; };
+		8DE3DF99171D1F950069EC20 /* GDHttpServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHttpServerViewController.m; sourceTree = "<group>"; };
+		8DE3DF9C171D23270069EC20 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		8DE3DFA3171D25E40069EC20 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
+		8DE3DFA5171D27070069EC20 /* FileUploadHttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUploadHttpConnection.h; sourceTree = "<group>"; };
+		8DE3DFA6171D27070069EC20 /* FileUploadHttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUploadHttpConnection.m; sourceTree = "<group>"; };
 		8DF2B09717002E1B009B6603 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		8DF2B09817002E1B009B6603 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		8DF2B09917002E1B009B6603 /* OAuthLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthLogin.m; sourceTree = "<group>"; };
@@ -78,14 +85,14 @@
 		8D8645AF16F99DD900ADC5A2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				8D8645CD16F9A6D800ADC5A2 /* GDRootViewController.m */,
 				8D8645B816F99DD900ADC5A2 /* GDAppDelegate.h */,
 				8D8645B916F99DD900ADC5A2 /* GDAppDelegate.m */,
 				8D8645C116F99DD900ADC5A2 /* MainStoryboard.storyboard */,
-				8D8645CC16F9A6D800ADC5A2 /* GDRootViewController.h */,
 				8D8645C416F99DD900ADC5A2 /* GDViewController.h */,
 				8D8645C516F99DD900ADC5A2 /* GDViewController.m */,
 				8D8645B016F99DD900ADC5A2 /* Supporting Files */,
+				8DE3DF98171D1F950069EC20 /* GDHttpServerViewController.h */,
+				8DE3DF99171D1F950069EC20 /* GDHttpServerViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 		8DB151F616F88895007B265E = {
 			isa = PBXGroup;
 			children = (
+				8DE3DF9B171D23270069EC20 /* Resources */,
 				8DF2B09517002E1B009B6603 /* Classes */,
 				8D8645AF16F99DD900ADC5A2 /* Demo */,
 				8DB1520116F88895007B265E /* Frameworks */,
@@ -136,6 +144,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8DE3DF9B171D23270069EC20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DE3DFA3171D25E40069EC20 /* web */,
+				8DE3DF9C171D23270069EC20 /* test.txt */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
 		8DF2B09517002E1B009B6603 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +166,8 @@
 		8DF2B09617002E1B009B6603 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				8DE3DFA5171D27070069EC20 /* FileUploadHttpConnection.h */,
+				8DE3DFA6171D27070069EC20 /* FileUploadHttpConnection.m */,
 				8DF2B09717002E1B009B6603 /* HelpViewController.h */,
 				8DF2B09817002E1B009B6603 /* HelpViewController.m */,
 				8DF2B09917002E1B009B6603 /* OAuthLogin.m */,
@@ -218,6 +238,8 @@
 				8D8645BE16F99DD900ADC5A2 /* Default@2x.png in Resources */,
 				8D8645C016F99DD900ADC5A2 /* Default-568h@2x.png in Resources */,
 				8D8645C316F99DD900ADC5A2 /* MainStoryboard.storyboard in Resources */,
+				8DE3DF9D171D23270069EC20 /* test.txt in Resources */,
+				8DE3DFA4171D25E40069EC20 /* web in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,11 +270,12 @@
 				8D8645B616F99DD900ADC5A2 /* main.m in Sources */,
 				8D8645BA16F99DD900ADC5A2 /* GDAppDelegate.m in Sources */,
 				8D8645C616F99DD900ADC5A2 /* GDViewController.m in Sources */,
-				8D8645CE16F9A6D800ADC5A2 /* GDRootViewController.m in Sources */,
 				8DF2B09F17002E1B009B6603 /* HelpViewController.m in Sources */,
 				8DF2B0A017002E1B009B6603 /* OAuthLogin.m in Sources */,
 				8DF2B0A117002E1B009B6603 /* PagedScrollView.m in Sources */,
 				8DF2B0A217002E1B009B6603 /* RTReader.m in Sources */,
+				8DE3DF9A171D1F950069EC20 /* GDHttpServerViewController.m in Sources */,
+				8DE3DFA7171D27070069EC20 /* FileUploadHttpConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +309,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -300,6 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;

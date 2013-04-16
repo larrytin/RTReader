@@ -1,28 +1,53 @@
 
-SPEC CHECKSUMS: 
-  gtm-oauth2/nibs: f75ae8b495a5de93c411dac616bbccac03b484c7
-  jre_emul: 2aee63ba3f73f905d9d1792b15448aab7beb657a
-  gtm-oauth2: f75ae8b495a5de93c411dac616bbccac03b484c7
-  SBJson: 4971016670e7b3fa04a36d4e72ab0fb1ad3a9f69
-  MBProgressHUD: 9b55a90566fb5d07df0602f6fd9fa04510ad5d52
-
-PODS: 
-- MBProgressHUD (0.6)
-- SBJson (3.2)
-- gtm-oauth2 (0.0.1): 
-  - gtm-oauth2/nibs (= 0.0.1)
-- gtm-oauth2/nibs (0.0.1)
-- jre_emul (0.6.1)
-
-COCOAPODS: 0.16.4
-
-DEPENDENCIES: 
-- MBProgressHUD (~> 0.6)
-- SBJson (~> 3.2)
-- gtm-oauth2 (~> 0.0.1)
-- jre_emul (from `https://github.com/goodow/j2objc.git')
-- jre_emul (~> 0.6.1)
-
 EXTERNAL SOURCES: 
   jre_emul: 
+    :tag: v0.6.1
     :git: https://github.com/goodow/j2objc.git
+
+PODS: 
+- CocoaAsyncSocket (0.0.1)
+- CocoaHTTPServer (2.3): 
+  - CocoaAsyncSocket (~> 0.0.1)
+  - CocoaLumberjack
+- CocoaLumberjack (1.6.2)
+- GTMHTTPFetcher (0.0.1): 
+  - SBJson
+- MBProgressHUD (0.6)
+- MWPhotoBrowser (1.0.1): 
+  - MBProgressHUD
+  - SDWebImage (< 3.0.0)
+- SBJson (3.2)
+- SDWebImage (2.7.4): 
+  - SDWebImage/Main (= 2.7.4)
+- SDWebImage/Main (2.7.4)
+- SVPullToRefresh (0.4.1)
+- gtm-oauth2/Core/Touch (0.0.1): 
+  - GTMHTTPFetcher
+  - SBJson
+- jre_emul (0.6.1)
+
+SPEC CHECKSUMS: 
+  CocoaAsyncSocket: 73c96a4225998adad0c94142010f65e5d12077de
+  MBProgressHUD: 9b55a90566fb5d07df0602f6fd9fa04510ad5d52
+  jre_emul: 2aee63ba3f73f905d9d1792b15448aab7beb657a
+  GTMHTTPFetcher: 563425df0ff2127edba46985df62ef60acd441e5
+  SDWebImage/Main: 06f076026fe7867ab0100fce95d943f7bff981eb
+  SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
+  CocoaHTTPServer: fae57be1739ba20b8b3e106d088e3dd55b12beb5
+  SDWebImage: 06f076026fe7867ab0100fce95d943f7bff981eb
+  MWPhotoBrowser: e54233d4c88e951a3b6b8f136393614cf319ac47
+  CocoaLumberjack: d73e1e317ced14ab930797dda6c17156ff17aaa1
+  gtm-oauth2/Core/Touch: c4824003b569bc9b96446661fb92dbc681335499
+  SBJson: 4971016670e7b3fa04a36d4e72ab0fb1ad3a9f69
+
+DEPENDENCIES: 
+- CocoaHTTPServer (~> 2.3)
+- MBProgressHUD (~> 0.6)
+- MWPhotoBrowser (~> 1.0.1)
+- SBJson (~> 3.2)
+- SVPullToRefresh (~> 0.4.1)
+- gtm-oauth2/Core/Touch (~> 0.0.1)
+- jre_emul (HEAD)
+- jre_emul (from `https://github.com/goodow/j2objc.git', tag `v0.6.1')
+
+COCOAPODS: 0.16.4

@@ -12,11 +12,12 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'jre_emul', '~> 0.6.1'
+  s.dependency 'jre_emul', :head
   s.dependency 'gtm-oauth2/Core/Touch', '~> 0.0.1'
   s.dependency 'SBJson', '~> 3.2'
   s.dependency 'MBProgressHUD', '~> 0.6'
   s.dependency 'SVPullToRefresh', '~> 0.4.1'
   s.dependency 'MWPhotoBrowser', '~> 1.0.1'
+  s.dependency 'CocoaHTTPServer', '~> 2.3'
 
 end
