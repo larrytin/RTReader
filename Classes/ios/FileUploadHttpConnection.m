@@ -22,6 +22,11 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 
 @implementation FileUploadHttpConnection
 
+static void (^_completionHandler)(NSString * filePath);
+
++ (void)onFileUploaded:(void(^)(NSString * filePath))completionHandler {
+  _completionHandler = completionHandler;
+}
 // retun the host name
 + (NSString *)hostname
 {
@@ -210,8 +215,8 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 {
 	// as the file part is over, we close the file.
 	[storeFile closeFile];
-  if(self.completionHandler){
-    self.completionHandler([uploadedFiles lastObject]);
+  if(_completionHandler){
+    _completionHandler([uploadedFiles lastObject]);
   }
 	storeFile = nil;
 }

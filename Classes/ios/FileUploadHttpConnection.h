@@ -10,7 +10,7 @@
 	NSMutableArray*					uploadedFiles;
 }
 
-@property (nonatomic, strong) void (^completionHandler)(NSString * filePath);
++ (void)onFileUploaded:(void(^)(NSString * filePath))completionHandler;
 
 + (NSString *)localIPAddress;
 
