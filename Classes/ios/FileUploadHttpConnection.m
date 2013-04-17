@@ -215,7 +215,7 @@ static void (^_completionHandler)(NSString * filePath);
 {
 	// as the file part is over, we close the file.
 	[storeFile closeFile];
-  if(_completionHandler){
+  if(storeFile && _completionHandler){
     _completionHandler([uploadedFiles lastObject]);
   }
 	storeFile = nil;
