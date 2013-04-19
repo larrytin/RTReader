@@ -187,9 +187,8 @@ static void (^_completionHandler)(NSString * filePath);
 	
     NSString* filePath = [uploadDirPath stringByAppendingPathComponent: filename];
     if( [[NSFileManager defaultManager] fileExistsAtPath:filePath] ) {
-        storeFile = nil;
+      [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
     }
-    else {
 		HTTPLogVerbose(@"Saving file to %@", filePath);
 		if(![[NSFileManager defaultManager] createDirectoryAtPath:uploadDirPath withIntermediateDirectories:true attributes:nil error:nil]) {
 			HTTPLogError(@"Could not create directory at path: %@", filePath);
@@ -199,7 +198,6 @@ static void (^_completionHandler)(NSString * filePath);
 		}
 		storeFile = [NSFileHandle fileHandleForWritingAtPath:filePath];
 		[uploadedFiles addObject: filePath];
-    }
 }
 
 

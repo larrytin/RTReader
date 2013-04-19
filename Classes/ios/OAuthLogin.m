@@ -5,7 +5,6 @@
 #import "JreEmulation.h"
 #import "java/util/regex/Pattern.h"
 #import "java/util/regex/Matcher.h"
-#import <MBProgressHUD/MBProgressHUD.h>
 
 static NSString *const keychainItemNameGoogle = @"OAuth2: Google";
 static NSString *const keychainItemNameQQ = @"OAuth2: QQ";

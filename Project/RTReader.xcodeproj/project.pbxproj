@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D6543D51720F1E9008A712C /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6543D41720F1E9008A712C /* libicucore.A.dylib */; };
 		8D8645AB16F99DD900ADC5A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8645AA16F99DD900ADC5A2 /* UIKit.framework */; };
 		8D8645AC16F99DD900ADC5A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB1520216F88895007B265E /* Foundation.framework */; };
 		8D8645AE16F99DD900ADC5A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8645AD16F99DD900ADC5A2 /* CoreGraphics.framework */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		52A2852C14284347816FBA59 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		58F2F77B4BCF42B2B1C2C325 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6543D41720F1E9008A712C /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
 		8D8645A916F99DD900ADC5A2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8645AA16F99DD900ADC5A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D8645AD16F99DD900ADC5A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6543D51720F1E9008A712C /* libicucore.A.dylib in Frameworks */,
 				8D8645AB16F99DD900ADC5A2 /* UIKit.framework in Frameworks */,
 				8D8645AC16F99DD900ADC5A2 /* Foundation.framework in Frameworks */,
 				8D8645AE16F99DD900ADC5A2 /* CoreGraphics.framework in Frameworks */,
@@ -114,6 +117,7 @@
 		8DB151F616F88895007B265E = {
 			isa = PBXGroup;
 			children = (
+				8D6543D41720F1E9008A712C /* libicucore.A.dylib */,
 				8DE3DF9B171D23270069EC20 /* Resources */,
 				8DF2B09517002E1B009B6603 /* Classes */,
 				8D8645AF16F99DD900ADC5A2 /* Demo */,
@@ -312,6 +316,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = /Users/retechretech/dev/workspace/ios/RTReader/Classes;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -328,6 +333,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = /Users/retechretech/dev/workspace/ios/RTReader/Classes;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
