@@ -20,6 +20,5 @@ Pod::Spec.new do |s|
 #  s.dependency 'SVPullToRefresh', '~> 0.4.1'
 #  s.dependency 'MWPhotoBrowser', '~> 1.0.1'
   s.dependency 'CocoaHTTPServer', '~> 2.3'
-  s.dependency 'Google-Diff-Match-Patch', '~> 0.0.1'
 
 end

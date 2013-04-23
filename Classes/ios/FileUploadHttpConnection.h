@@ -11,6 +11,7 @@
 }
 
 + (void)onFileUploaded:(void(^)(NSString * filePath))completionHandler;
++ (void)onFileUploadProgress:(void(^)(NSString * fileName, float progress))progressHandler;
 
 + (NSString *)localIPAddress;
 
