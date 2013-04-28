@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'jre_emul', '~> 0.6.1'
+  s.dependency 'jre_emul', '~> 0.7.2'
   s.dependency 'gtm-oauth2/Core', '~> 0.0.1'
   s.dependency 'gtm-oauth2/Core/Touch', '~> 0.0.1'
   s.dependency 'SBJson', '~> 3.2'
