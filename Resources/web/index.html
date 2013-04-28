@@ -1,15 +1,30 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">
-			</head>
-	<body>
-		<form action="upload.html" method="post" enctype="multipart/form-data" accept-charset="utf-8">
-			<input type="file" name="upload1"><br/>
-                <input type="file" name="upload2" style='display:none'><br/>
-				<input type="submit" value="Submit">
-					</form>
-		
-
-	</body>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+            <script src="scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+            <script src="scripts/upload.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form id="upload_form" action="upload.html" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+            <table width=100% border="0" cellspacing="0" cellpadding="0" style="margin: 50px 0 0 0;">
+                <tr>
+                    <td align="center">
+                        <div style="position: relative; width: 212px; height: 92px;">
+                            <img class="upload_button" src="images/button_select_normal.png">
+                                <div class="file_upload_warper">
+                                    <input type="file" name="upload1" value="" id="newfile" class="file_upload">
+                                        </div>
+                                </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" height=75><span class="file_text">还未选择任何文件</span></td>
+                </tr>
+                <tr>
+                    <td align="center"><a class="submit" href="javascript:void(0);">Submit</a></td>
+                </tr>
+            </table>
+        </form>
+    </body>
 </html>
